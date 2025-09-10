@@ -2,9 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 const jwt = require('jsonwebtoken');
-
-// Exemple d'API distante qu'on appelle
-const REMOTE_API_URL = 'https://api.exemple.com/authenticate';
+const REMOTE_API_URL = 'https://globe-pocket-back.onrender.com/api/login';
 
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
